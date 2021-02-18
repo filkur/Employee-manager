@@ -27,12 +27,12 @@ public class EmployeeService {
         return repository.save(employee);
     }
 
-    public List<Employee> getAllEmployees() {
+    public List<Employee> findAllEmployees() {
         return repository.findAll();
     }
 
-    public Employee getEmployeeById (int id){
-        return repository.findAllById(id).orElseThrow(
+    public Employee findEmployeeById(int id){
+        return repository.findById(id).orElseThrow(
                 () -> new UserNotFoundException("User by id "+id+" was not found")
         );
     }
