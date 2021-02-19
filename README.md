@@ -1,2 +1,2 @@
 # Employee-manager
-Employee manager application - backend side
+Employee manager application (SpringBoot) - backend side
